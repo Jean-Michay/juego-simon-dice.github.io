@@ -49,7 +49,7 @@ class Game {
     toggleBtnBegin () {
         if (btnBegin.classList.contains('hide')){
             btnBegin.classList.remove('hide')
-            btnBegin.textContent = "Start Game!"
+            btnBegin.textContent = "Empezar juego!"
         }
         else {
             btnBegin.classList.add('hide')
@@ -169,13 +169,13 @@ class Game {
 
     winGame() {
       
-        swal("Juego simón dice.","Felicidades! Has ganado !", "success")
+        swal("Simón dice.","Felicidades! Has ganado !", "success")
             .then(() => this.begin())
     }
 
     gameOver() {
         
-        swal("Juego simón dice.","Has perdido! :(", "error")
+        swal("Simón dice.","Has perdido! :(", "error")
             .then(() => {
                 this.eliminateClickEvents()
                 this.begin()
